@@ -13,4 +13,9 @@ public class HomeController {
         map.put("memes", gif.addGifs());
         return "home";
     }
+
+    @GetMapping("/categories")
+    public String cat(ModelMap modelMap){
+        return "/categories";
+    }
 }
